@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+    <div class="loading-screen " id="loadingScreen" style="background-color:white;">
+        <div class="spinner"></div>
+    </div>
+
+    <nav>
+        <div class="main-nav container flex">
+            <h1>News-India</h1>
+            <span class="material-symbols-outlined hamburger">
+                menu
+                </span>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="sports">Sports</li>
+                    <li class="hover-link nav-item" id="finance">Finance</li>
+                    <li class="hover-link nav-item" id="politics">Politics</li>
+                    <li class="hover-link nav-item" id="technology">Technology</li>
+                </ul>
+                <div class="search-bar flex">
+
+                    <input id="search-text" type="text" class="news-input" placeholder="e.g. Science" style="margin-left: 1rem; margin-right: 1rem; ">
+                    <button id="search-button" class="search-button" style="margin: 1rem;" >Search</button>
+  
+
+                    <img class="icon"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCZIpPgy0z7eBCzHWMFfIZDDfh9lde3GLh5Q&s"
+                        alt="" style="object-fit: cover;
+                   cursor: pointer;
+                   height: 2rem;
+                  
+                   width: 2rem;
+                   
+                   border-radius: 1rem;
+                   /* mix-blend-mode: multiply; */
+                   ">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source"> 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                    saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+  
+
+    <script src="index.js"></script>
+   
+</body>
+
+</html>
